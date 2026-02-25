@@ -2,6 +2,15 @@
 // State management, filtering, rendering, event handlers, URL state
 
 // ============================================================
+// COMBINE ALL ACTIVITY DATA
+// ============================================================
+
+// Merge all activity arrays from separate data files into one
+var ALL_ACTIVITIES = ACTIVITIES
+  .concat(typeof PARKS_OUTDOOR_ACTIVITIES !== "undefined" ? PARKS_OUTDOOR_ACTIVITIES : [])
+  .concat(typeof INDOOR_EVENING_ACTIVITIES !== "undefined" ? INDOOR_EVENING_ACTIVITIES : []);
+
+// ============================================================
 // STATE
 // ============================================================
 
@@ -188,7 +197,7 @@ function renderFilterReaction() {
 
 function renderResults() {
   var character = CHARACTERS[state.character];
-  var filtered = filterActivities(ACTIVITIES, state);
+  var filtered = filterActivities(ALL_ACTIVITIES, state);
   var resultsEl = document.getElementById("results");
   var metaEl = document.getElementById("results-meta");
 

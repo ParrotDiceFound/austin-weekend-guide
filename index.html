@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawnee Presents: Austin Weekend Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-badge">
+      <span class="badge-star">★</span>
+      <h1>Pawnee Presents</h1>
+      <h2>Austin Weekend Guide</h2>
+      <span class="badge-tagline">Treat Yo'self to Austin</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Character Picker -->
+    <section class="character-picker" id="character-picker">
+      <h3 class="section-label">Choose Your Guide</h3>
+      <div class="character-row" id="character-row">
+        <!-- Characters rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar" id="filter-bar">
+      <div class="filter-group">
+        <span class="filter-label">Weather:</span>
+        <div class="filter-pills" id="weather-filters">
+          <button class="pill" data-filter="weather" data-value="hot">☀️ Hot Day</button>
+          <button class="pill" data-filter="weather" data-value="cool">🌤️ Nice Out</button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-label">Time:</span>
+        <div class="filter-pills" id="time-filters">
+          <button class="pill" data-filter="time" data-value="morning">Morning</button>
+          <button class="pill" data-filter="time" data-value="afternoon">Afternoon</button>
+          <button class="pill" data-filter="time" data-value="evening">Evening</button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-label">Activity:</span>
+        <div class="filter-pills" id="tag-filters">
+          <button class="pill" data-filter="tag" data-value="outdoors">🌳 Outdoors</button>
+          <button class="pill" data-filter="tag" data-value="indoors">🏠 Indoors</button>
+          <button class="pill" data-filter="tag" data-value="water">💦 Water</button>
+          <button class="pill" data-filter="tag" data-value="kidFriendly">👶 Kid-Friendly</button>
+          <button class="pill" data-filter="tag" data-value="food">🍽️ Food & Drink</button>
+          <button class="pill" data-filter="tag" data-value="liveMusic">🎵 Live Music</button>
+          <button class="pill" data-filter="tag" data-value="comedy">😂 Comedy</button>
+          <button class="pill" data-filter="tag" data-value="sports">⚽ Sports</button>
+          <button class="pill" data-filter="tag" data-value="hiking">🥾 Hiking</button>
+          <button class="pill" data-filter="tag" data-value="playground">🛝 Playground</button>
+        </div>
+      </div>
+
+      <button class="clear-filters-btn" id="clear-filters">Clear All Filters</button>
+    </section>
+
+    <!-- Character Intro -->
+    <section class="character-intro" id="character-intro">
+      <!-- Rendered by app.js -->
+    </section>
+
+    <!-- Filter Reaction (optional, shown when relevant) -->
+    <section class="filter-reaction" id="filter-reaction">
+      <!-- Rendered by app.js -->
+    </section>
+
+    <!-- Results Count -->
+    <div class="results-meta" id="results-meta">
+      <!-- e.g. "Showing 12 activities" -->
+    </div>
+
+    <!-- Activity Cards -->
+    <section class="results" id="results">
+      <!-- Activity cards rendered by app.js -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with love for Austin, TX. Inspired by the Parks Department of Pawnee, Indiana.</p>
+  </footer>
+
+  <!-- Data files first -->
+  <script src="data/activities.js"></script>
+  <script src="data/characters.js"></script>
+  <!-- App logic last -->
+  <script src="app.js"></script>
+
+</body>
+</html>

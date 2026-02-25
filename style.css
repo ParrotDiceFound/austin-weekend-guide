@@ -1,0 +1,503 @@
+/* Austin Weekend Guide — Parks and Rec Edition */
+/* Mobile-first responsive design */
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #FDF6EC;
+  color: #2C1810;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px 40px;
+}
+
+/* ============================================================
+   HEADER — Parks Department Badge Style
+   ============================================================ */
+
+.site-header {
+  background: #2C1810;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.header-badge {
+  display: inline-block;
+  border: 3px solid #DAA520;
+  border-radius: 8px;
+  padding: 16px 32px;
+  position: relative;
+}
+
+.badge-star {
+  color: #DAA520;
+  font-size: 24px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.header-badge h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #DAA520;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+
+.header-badge h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #FFEFD5;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.badge-tagline {
+  color: #DAA520;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* ============================================================
+   CHARACTER PICKER
+   ============================================================ */
+
+.character-picker {
+  padding: 20px 0 12px;
+}
+
+.section-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #8B7355;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.character-row {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  -webkit-overflow-scrolling: touch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.character-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 14px;
+  border: 2px solid #D4C5A9;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  min-width: 70px;
+  flex-shrink: 0;
+}
+
+.character-btn:hover {
+  border-color: #8B7355;
+  transform: translateY(-2px);
+}
+
+.character-btn.active {
+  border-width: 3px;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.character-emoji {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.character-name {
+  font-size: 11px;
+  font-weight: 600;
+  color: #2C1810;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================================
+   FILTER BAR
+   ============================================================ */
+
+.filter-bar {
+  padding: 16px 0;
+  border-top: 1px solid #E8DCC8;
+  border-bottom: 1px solid #E8DCC8;
+}
+
+.filter-group {
+  margin-bottom: 12px;
+}
+
+.filter-group:last-of-type {
+  margin-bottom: 8px;
+}
+
+.filter-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #8B7355;
+  margin-bottom: 6px;
+}
+
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pill {
+  padding: 8px 14px;
+  border: 1.5px solid #D4C5A9;
+  border-radius: 20px;
+  background: white;
+  color: #5C4A32;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.12s ease;
+  white-space: nowrap;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.pill:hover {
+  border-color: #8B7355;
+  background: #FAF4E8;
+}
+
+.pill.active {
+  background: #2C1810;
+  color: #FFEFD5;
+  border-color: #2C1810;
+}
+
+.clear-filters-btn {
+  display: none;
+  margin-top: 8px;
+  padding: 6px 14px;
+  background: none;
+  border: none;
+  color: #8B7355;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.clear-filters-btn:hover {
+  color: #2C1810;
+}
+
+/* ============================================================
+   CHARACTER INTRO
+   ============================================================ */
+
+.character-intro {
+  padding: 20px 0 8px;
+}
+
+.intro-quote {
+  border-left: 4px solid #DAA520;
+  padding: 16px 20px;
+  background: white;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.intro-text {
+  font-size: 17px;
+  font-style: italic;
+  color: #2C1810;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.intro-attribution {
+  font-size: 13px;
+  color: #8B7355;
+  font-weight: 600;
+}
+
+/* ============================================================
+   FILTER REACTION
+   ============================================================ */
+
+.filter-reaction {
+  padding: 0 0 8px;
+  display: none;
+}
+
+.reaction-bubble {
+  border: 1.5px dashed #D4C5A9;
+  border-radius: 8px;
+  padding: 10px 16px;
+  background: #FAF4E8;
+}
+
+.reaction-bubble p {
+  font-size: 14px;
+  font-style: italic;
+  color: #5C4A32;
+}
+
+/* ============================================================
+   RESULTS
+   ============================================================ */
+
+.results-meta {
+  padding: 12px 0 4px;
+}
+
+.results-count {
+  font-size: 12px;
+  color: #8B7355;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 8px;
+}
+
+/* ============================================================
+   ACTIVITY CARD
+   ============================================================ */
+
+.activity-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #E8DCC8;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.card-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2C1810;
+  line-height: 1.3;
+}
+
+.card-neighborhood {
+  font-size: 11px;
+  color: #8B7355;
+  white-space: nowrap;
+  padding-top: 4px;
+  flex-shrink: 0;
+}
+
+.card-quip {
+  border-left: 3px solid #DAA520;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  background: #FDF6EC;
+  border-radius: 0 6px 6px 0;
+}
+
+.card-quip p {
+  font-size: 14px;
+  font-style: italic;
+  color: #5C4A32;
+  margin-bottom: 4px;
+}
+
+.card-quip cite {
+  font-size: 12px;
+  color: #8B7355;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.card-description {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #3D2E1F;
+  margin-bottom: 14px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.card-tag {
+  font-size: 11px;
+  padding: 3px 8px;
+  background: #FAF4E8;
+  color: #8B7355;
+  border-radius: 10px;
+  border: 1px solid #E8DCC8;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-cost {
+  font-size: 13px;
+  font-weight: 600;
+  color: #8B7355;
+}
+
+.card-link {
+  font-size: 12px;
+  color: #8B4513;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================
+   EMPTY STATE
+   ============================================================ */
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  background: white;
+  border-radius: 12px;
+  border: 2px dashed #D4C5A9;
+}
+
+.empty-emoji {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.empty-text {
+  font-size: 16px;
+  font-style: italic;
+  color: #5C4A32;
+  max-width: 500px;
+  margin: 0 auto 8px;
+  line-height: 1.5;
+}
+
+.empty-attribution {
+  font-size: 13px;
+  color: #8B7355;
+  font-weight: 600;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.site-footer {
+  text-align: center;
+  padding: 24px 16px;
+  border-top: 1px solid #E8DCC8;
+  margin-top: 40px;
+}
+
+.site-footer p {
+  font-size: 12px;
+  color: #8B7355;
+}
+
+/* ============================================================
+   RESPONSIVE — Tablet & Desktop
+   ============================================================ */
+
+@media (min-width: 640px) {
+  main {
+    padding: 0 24px 40px;
+  }
+
+  .header-badge {
+    padding: 20px 48px;
+  }
+
+  .header-badge h2 {
+    font-size: 28px;
+  }
+
+  .character-row {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .character-btn {
+    min-width: 80px;
+    padding: 12px 18px;
+  }
+
+  .character-emoji {
+    font-size: 32px;
+  }
+
+  .character-name {
+    font-size: 12px;
+  }
+
+  .filter-pills {
+    gap: 8px;
+  }
+
+  .intro-text {
+    font-size: 19px;
+  }
+
+  .card-name {
+    font-size: 20px;
+  }
+
+  .card-description {
+    font-size: 15px;
+  }
+}

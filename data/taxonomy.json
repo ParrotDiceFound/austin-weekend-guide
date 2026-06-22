@@ -1,0 +1,686 @@
+{
+  "version": 1,
+  "activities": {
+    "barton-springs": {
+      "category": "water",
+      "tags": [
+        "dogFriendly",
+        "kidFriendly"
+      ]
+    },
+    "deep-eddy": {
+      "category": "water",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "krause-springs": {
+      "category": "water",
+      "tags": [
+        "hiking",
+        "kidFriendly"
+      ]
+    },
+    "ladybird-kayak": {
+      "category": "water",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "san-marcos-tubing": {
+      "category": "water",
+      "tags": []
+    },
+    "zilker-park": {
+      "category": "outdoors",
+      "tags": [
+        "hiking",
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "ladybird-trail": {
+      "category": "outdoors",
+      "tags": [
+        "hiking",
+        "kidFriendly"
+      ]
+    },
+    "mt-bonnell": {
+      "category": "outdoors",
+      "tags": [
+        "dogFriendly",
+        "hiking",
+        "kidFriendly"
+      ]
+    },
+    "south-congress": {
+      "category": "outdoors",
+      "tags": [
+        "food",
+        "kidFriendly"
+      ]
+    },
+    "enchanted-rock": {
+      "category": "outdoors",
+      "tags": [
+        "hiking",
+        "kidFriendly"
+      ]
+    },
+    "butler-pitch-putt": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "pickleball-pan-am": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "alamo-drafthouse": {
+      "category": "indoors",
+      "tags": [
+        "food",
+        "kidFriendly"
+      ]
+    },
+    "mesa-rim": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "blanton-museum": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "bullock-museum": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "austin-central-library": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "cidercade": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "jester-king": {
+      "category": "outdoors",
+      "tags": [
+        "food",
+        "kidFriendly"
+      ]
+    },
+    "lazarus-brewing": {
+      "category": "outdoors",
+      "tags": [
+        "dogFriendly",
+        "food",
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "congress-bats": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "broken-spoke": {
+      "category": "indoors",
+      "tags": [
+        "food",
+        "liveMusic"
+      ]
+    },
+    "skylark-lounge": {
+      "category": "indoors",
+      "tags": [
+        "liveMusic"
+      ]
+    },
+    "mueller-lake-park": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "meanwhile-brewing": {
+      "category": "outdoors",
+      "tags": [
+        "dogFriendly",
+        "food",
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "vigilante": {
+      "category": "indoors",
+      "tags": [
+        "food",
+        "kidFriendly"
+      ]
+    },
+    "topgolf": {
+      "category": "outdoors",
+      "tags": [
+        "food",
+        "kidFriendly"
+      ]
+    },
+    "pease-park": {
+      "category": "water",
+      "tags": [
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "mayfield-park": {
+      "category": "outdoors",
+      "tags": [
+        "hiking",
+        "kidFriendly"
+      ]
+    },
+    "bartholomew-park": {
+      "category": "water",
+      "tags": [
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "circle-c-playground": {
+      "category": "outdoors",
+      "tags": [
+        "hiking",
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "walnut-creek-park": {
+      "category": "outdoors",
+      "tags": [
+        "hiking",
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "ramsey-park": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "mary-moore-searight-park": {
+      "category": "outdoors",
+      "tags": [
+        "hiking",
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "bull-creek-park": {
+      "category": "water",
+      "tags": [
+        "hiking",
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "beverly-sheffield-park": {
+      "category": "outdoors",
+      "tags": [
+        "dogFriendly",
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "greenbelt-twin-falls": {
+      "category": "water",
+      "tags": [
+        "dogFriendly",
+        "hiking",
+        "kidFriendly"
+      ]
+    },
+    "greenbelt-sculpture-falls": {
+      "category": "water",
+      "tags": [
+        "hiking"
+      ]
+    },
+    "greenbelt-gus-fruh": {
+      "category": "outdoors",
+      "tags": [
+        "hiking"
+      ]
+    },
+    "mckinney-falls": {
+      "category": "water",
+      "tags": [
+        "hiking",
+        "kidFriendly"
+      ]
+    },
+    "wild-basin": {
+      "category": "outdoors",
+      "tags": [
+        "hiking",
+        "kidFriendly"
+      ]
+    },
+    "st-edwards-park": {
+      "category": "outdoors",
+      "tags": [
+        "hiking",
+        "kidFriendly"
+      ]
+    },
+    "river-place-trail": {
+      "category": "outdoors",
+      "tags": [
+        "dogFriendly",
+        "hiking"
+      ]
+    },
+    "turkey-creek-trail": {
+      "category": "outdoors",
+      "tags": [
+        "dogFriendly",
+        "hiking",
+        "kidFriendly"
+      ]
+    },
+    "commons-ford-ranch": {
+      "category": "water",
+      "tags": [
+        "hiking",
+        "kidFriendly"
+      ]
+    },
+    "garrison-pool": {
+      "category": "water",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "big-stacy-pool": {
+      "category": "water",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "bartholomew-pool-splashpad": {
+      "category": "water",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "liz-carpenter-splash-pad": {
+      "category": "water",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "pease-splash-pad": {
+      "category": "water",
+      "tags": [
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "roy-g-guerrero-disc-golf": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "circle-c-disc-golf": {
+      "category": "outdoors",
+      "tags": [
+        "dogFriendly",
+        "kidFriendly"
+      ]
+    },
+    "zilker-disc-golf": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "mary-moore-disc-golf": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "austin-nature-science-center": {
+      "category": "outdoors",
+      "tags": [
+        "hiking",
+        "kidFriendly"
+      ]
+    },
+    "veloway": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "east-metro-fishing": {
+      "category": "water",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "walter-e-long-lake": {
+      "category": "water",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "barton-springs-bike-rental": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "emma-long-park": {
+      "category": "water",
+      "tags": [
+        "hiking",
+        "kidFriendly"
+      ]
+    },
+    "zilker-botanical-garden": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "mueller-splash-pad": {
+      "category": "water",
+      "tags": [
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "ladybird-johnson-wildflower-center": {
+      "category": "outdoors",
+      "tags": [
+        "food",
+        "hiking",
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "mills-pond": {
+      "category": "water",
+      "tags": [
+        "dogFriendly",
+        "kidFriendly"
+      ]
+    },
+    "sprinkle-valley-disc-golf": {
+      "category": "outdoors",
+      "tags": [
+        "food",
+        "kidFriendly"
+      ]
+    },
+    "thinkery": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "lbj-library": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "umlauf-sculpture": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "contemporary-austin": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "mexic-arte": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "texas-capitol": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "westgate-lanes": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "highland-lanes": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "escape-game-austin": {
+      "category": "indoors",
+      "tags": []
+    },
+    "pinballz-arcade": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "k1-speed": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "peter-pan-mini-golf": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "esthers-follies": {
+      "category": "indoors",
+      "tags": [
+        "comedy"
+      ]
+    },
+    "creek-and-cave": {
+      "category": "indoors",
+      "tags": [
+        "comedy",
+        "food"
+      ]
+    },
+    "velveeta-room": {
+      "category": "indoors",
+      "tags": [
+        "comedy"
+      ]
+    },
+    "fallout-theater": {
+      "category": "indoors",
+      "tags": [
+        "comedy"
+      ]
+    },
+    "continental-club": {
+      "category": "indoors",
+      "tags": [
+        "liveMusic"
+      ]
+    },
+    "stubbs": {
+      "category": "outdoors",
+      "tags": [
+        "food",
+        "liveMusic"
+      ]
+    },
+    "antones": {
+      "category": "indoors",
+      "tags": [
+        "liveMusic"
+      ]
+    },
+    "elephant-room": {
+      "category": "indoors",
+      "tags": [
+        "liveMusic"
+      ]
+    },
+    "saxon-pub": {
+      "category": "indoors",
+      "tags": [
+        "liveMusic"
+      ]
+    },
+    "cboys-heart-soul": {
+      "category": "indoors",
+      "tags": [
+        "liveMusic"
+      ]
+    },
+    "mohawk": {
+      "category": "outdoors",
+      "tags": [
+        "liveMusic"
+      ]
+    },
+    "blue-starlite": {
+      "category": "outdoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "chicken-shit-bingo": {
+      "category": "indoors",
+      "tags": [
+        "liveMusic"
+      ]
+    },
+    "celis-brewery": {
+      "category": "outdoors",
+      "tags": [
+        "food",
+        "kidFriendly"
+      ]
+    },
+    "pinthouse-pizza": {
+      "category": "indoors",
+      "tags": [
+        "food",
+        "kidFriendly"
+      ]
+    },
+    "austin-beerworks": {
+      "category": "outdoors",
+      "tags": [
+        "dogFriendly",
+        "food",
+        "kidFriendly"
+      ]
+    },
+    "st-elmo-brewing": {
+      "category": "outdoors",
+      "tags": [
+        "dogFriendly",
+        "food",
+        "kidFriendly"
+      ]
+    },
+    "thicket-food-park": {
+      "category": "outdoors",
+      "tags": [
+        "food",
+        "kidFriendly",
+        "liveMusic",
+        "playground"
+      ]
+    },
+    "franklin-bbq": {
+      "category": "indoors",
+      "tags": [
+        "food",
+        "kidFriendly"
+      ]
+    },
+    "la-barbecue": {
+      "category": "outdoors",
+      "tags": [
+        "food",
+        "kidFriendly"
+      ]
+    },
+    "mueller-farmers-market": {
+      "category": "outdoors",
+      "tags": [
+        "dogFriendly",
+        "food",
+        "kidFriendly"
+      ]
+    },
+    "texas-roller-derby": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "canopy-art-tour": {
+      "category": "indoors",
+      "tags": [
+        "kidFriendly"
+      ]
+    },
+    "round-rock-express": {
+      "category": "outdoors",
+      "tags": [
+        "food",
+        "kidFriendly",
+        "playground"
+      ]
+    },
+    "austin-fc": {
+      "category": "outdoors",
+      "tags": [
+        "food",
+        "kidFriendly"
+      ]
+    }
+  }
+}

@@ -15,6 +15,7 @@
       <h2>Austin Weekend Guide</h2>
       <span class="badge-tagline">Treat Yo'self to Austin</span>
     </div>
+    <button class="header-feedback-btn" data-action="open-feedback">Leave feedback</button>
   </header>
 
   <main>
@@ -29,40 +30,26 @@
     <!-- Filter Bar -->
     <section class="filter-bar" id="filter-bar">
       <div class="filter-group">
-        <span class="filter-label">Weather:</span>
-        <div class="filter-pills" id="weather-filters">
-          <button class="pill" data-filter="weather" data-value="hot">☀️ Hot Day</button>
-          <button class="pill" data-filter="weather" data-value="cool">🌤️ Nice Out</button>
+        <span class="filter-label">Type:</span>
+        <div class="filter-pills" id="activity-type-filters">
+          <button class="pill" data-filter="activityType" data-value="outdoors">🌳 Outdoors</button>
+          <button class="pill" data-filter="activityType" data-value="indoors">🏠 Indoors</button>
+          <button class="pill" data-filter="activityType" data-value="water">💦 Water</button>
         </div>
       </div>
 
       <div class="filter-group">
-        <span class="filter-label">Time:</span>
-        <div class="filter-pills" id="time-filters">
-          <button class="pill" data-filter="time" data-value="morning">Morning</button>
-          <button class="pill" data-filter="time" data-value="afternoon">Afternoon</button>
-          <button class="pill" data-filter="time" data-value="evening">Evening</button>
-        </div>
-      </div>
-
-      <div class="filter-group">
-        <span class="filter-label">Activity:</span>
+        <span class="filter-label">Good for:</span>
         <div class="filter-pills" id="tag-filters">
-          <button class="pill" data-filter="tag" data-value="outdoors">🌳 Outdoors</button>
-          <button class="pill" data-filter="tag" data-value="indoors">🏠 Indoors</button>
-          <button class="pill" data-filter="tag" data-value="water">💦 Water</button>
           <button class="pill" data-filter="tag" data-value="kidFriendly">👶 Kid-Friendly</button>
-          <button class="pill" data-filter="tag" data-value="food">🍽️ Food & Drink</button>
-          <button class="pill" data-filter="tag" data-value="liveMusic">🎵 Live Music</button>
-          <button class="pill" data-filter="tag" data-value="comedy">😂 Comedy</button>
-          <button class="pill" data-filter="tag" data-value="sports">⚽ Sports</button>
-          <button class="pill" data-filter="tag" data-value="hiking">🥾 Hiking</button>
-          <button class="pill" data-filter="tag" data-value="playground">🛝 Playground</button>
+          <button class="pill" data-filter="tag" data-value="dogFriendly">🐕 Dog-Friendly</button>
         </div>
       </div>
 
       <button class="clear-filters-btn" id="clear-filters">Clear All Filters</button>
     </section>
+
+    <p class="persistence-notice" id="persistence-notice" hidden></p>
 
     <!-- Character Intro -->
     <section class="character-intro" id="character-intro">
@@ -88,6 +75,42 @@
   <footer class="site-footer">
     <p>Built with love for Austin, TX. Inspired by the Parks Department of Pawnee, Indiana.</p>
   </footer>
+
+  <section class="sheet" id="taxonomy-sheet" hidden aria-labelledby="taxonomy-title" role="dialog" aria-modal="true">
+    <div class="sheet-backdrop" data-action="close-sheet"></div>
+    <div class="sheet-panel">
+      <div class="sheet-header">
+        <h2 id="taxonomy-title">Fix tags</h2>
+        <button class="sheet-close" data-action="close-sheet" aria-label="Close">×</button>
+      </div>
+      <form id="taxonomy-form">
+        <div id="taxonomy-choices"></div>
+        <p class="sheet-status" id="taxonomy-status" aria-live="polite"></p>
+        <button class="sheet-submit" type="submit">Save taxonomy</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="sheet" id="feedback-sheet" hidden aria-labelledby="feedback-title" role="dialog" aria-modal="true">
+    <div class="sheet-backdrop" data-action="close-sheet"></div>
+    <div class="sheet-panel">
+      <div class="sheet-header">
+        <h2 id="feedback-title">Guide feedback</h2>
+        <button class="sheet-close" data-action="close-sheet" aria-label="Close">×</button>
+      </div>
+      <form id="feedback-form">
+        <input id="feedback-activity-id" type="hidden">
+        <label class="feedback-label" for="feedback-text">What should we improve next time?</label>
+        <textarea id="feedback-text" maxlength="1200" required placeholder="e.g. Add a tag for stroller-friendly places"></textarea>
+        <p class="sheet-status" id="feedback-status" aria-live="polite"></p>
+        <button class="sheet-submit" type="submit">Save note</button>
+      </form>
+      <div class="feedback-list-wrap">
+        <h3>Open notes</h3>
+        <ul id="feedback-list" class="feedback-list"></ul>
+      </div>
+    </div>
+  </section>
 
   <!-- Data files first -->
   <script src="data/activities.js"></script>

@@ -53,10 +53,6 @@ const CHARACTERS = {
         "Comedy is people saying obvious things about the government that everyone already knows.",
         "I prefer unintentional comedy. Like watching a vegan try to order at a steakhouse."
       ],
-      sports: [
-        "Physical competition is the foundation of civilization. I approve.",
-        "Sports are acceptable because they involve exertion and minimal talking."
-      ],
       hiking: [
         "Walking in the woods is the purest form of human activity. No Wi-Fi, no meetings, no nonsense.",
         "A good hike should leave you tired, dirty, and at least three miles from the nearest person.",
@@ -135,10 +131,6 @@ const CHARACTERS = {
         "Laughter is the best medicine! After actual medicine! And waffles!",
         "Comedy shows are like council meetings but everyone's having fun! So, the opposite!"
       ],
-      sports: [
-        "Team sports build character AND community AND friendship AND everything good!",
-        "Physical activity is important! I once ran a 5K while finishing a budget proposal!"
-      ],
       hiking: [
         "Hiking is walking but with PURPOSE and VIEWS! Two of my favorite things!",
         "I have hiked every trail in the Austin metro area and rated them all in my binder!",
@@ -214,10 +206,6 @@ const CHARACTERS = {
       comedy: [
         "Comedy is great because laughing is basically ab exercise!",
         "I love comedy shows! I once did an open mic! The audience loved it! ...I think!"
-      ],
-      sports: [
-        "SPORTS! I love sports! All of them! Even the ones I don't understand! Which is most of them!",
-        "Playing sports is awesome because you get to wear cool outfits and high-five people!"
       ],
       hiking: [
         "Hiking is just walking but you get to pretend you're on an adventure! Which you ARE!",
@@ -295,10 +283,6 @@ const CHARACTERS = {
         "Comedy shows are great because laughing makes you look approachable. Brand strategy.",
         "I could do comedy. I'm hilarious. But I'm saving my talent for when the time is right."
       ],
-      sports: [
-        "Sports are cool if you've got the right athleisure. Looking good IS the sport.",
-        "I support sports from the VIP section. That's how professionals do it."
-      ],
       hiking: [
         "Hiking? With these shoes? ...Okay fine, I'll go. But I'm Instagramming the whole thing.",
         "Nature walks are acceptable if there's a coffee shop at the end of the trail."
@@ -372,10 +356,6 @@ const CHARACTERS = {
       comedy: [
         "Comedy is people saying the dark things I'm already thinking. Finally, honesty.",
         "I only like comedy that makes other people uncomfortable. The darker the better."
-      ],
-      sports: [
-        "Sports are just organized arguing with extra steps. I'll watch from far away.",
-        "I don't play sports but I do enjoy watching people lose. Is that wrong? I don't care."
       ],
       hiking: [
         "Hiking is just walking away from people but in nature. Literally my dream activity.",
@@ -454,10 +434,6 @@ const CHARACTERS = {
         "Laughter burns 10-40 calories per 15 minutes! Comedy is LITERALLY exercise!",
         "The endorphin release from laughing is comparable to a moderate jog! I LOVE science!"
       ],
-      sports: [
-        "Physical activity! LITERALLY the foundation of human happiness! Your body is a TEMPLE!",
-        "Sports combine fitness, strategy, and social bonding! The TRIFECTA of wellness!"
-      ],
       hiking: [
         "Hiking is LITERALLY the perfect activity! Cardio, strength, balance, AND nature exposure!",
         "Every step on a trail adds minutes to your life! I calculated this while hiking! While smiling!",
@@ -479,7 +455,6 @@ const CHARACTERS = {
 
     filterReactions: {
       hiking: "HIKING! LITERALLY my favorite activity! Your VO2 max is going to be SO grateful!",
-      sports: "SPORTS! Physical excellence! Your fast-twitch muscle fibers are going to have a GREAT day!",
       water: "Water activities! EXCELLENT for low-impact cardiovascular training! Your joints are CELEBRATING!",
       food: "Dining out! Remember: eating is fueling! Choose wisely and ENJOY every bite! Your body is a MACHINE!"
     }

@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "check": "node --check app.js && node --check netlify/functions/guide-state.mjs && node scripts/validate-taxonomy.js"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^10.7.9"
+  }
+}

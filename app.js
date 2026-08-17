@@ -346,7 +346,7 @@ async function saveTaxonomy(event) {
     render();
     window.setTimeout(closeSheets, 500);
   } catch (error) {
-    status.textContent = "Could not save. Check your connection and try again.";
+    status.textContent = "Could not save: " + error.message;
   }
 }
 
@@ -373,7 +373,7 @@ async function saveFeedback(event) {
     status.textContent = "Saved.";
     renderFeedbackList();
   } catch (error) {
-    status.textContent = "Could not save. Check your connection and try again.";
+    status.textContent = "Could not save: " + error.message;
   }
 }
 
@@ -382,7 +382,7 @@ async function resolveFeedback(feedbackId) {
     GUIDE_STATE = await updateGuideState({ action: "resolveFeedback", feedbackId: feedbackId });
     renderFeedbackList();
   } catch (error) {
-    document.getElementById("feedback-status").textContent = "Could not update that note.";
+    document.getElementById("feedback-status").textContent = "Could not update that note: " + error.message;
   }
 }
 
@@ -430,7 +430,7 @@ async function loadData() {
 
 async function fetchGuideState() {
   var response = await fetch(GUIDE_STATE_API, { cache: "no-store" });
-  if (!response.ok) throw new Error("Could not load saved guide state.");
+  if (!response.ok) throw new Error(await responseErrorMessage(response, "Could not load saved guide state."));
   return response.json();
 }
 
@@ -440,8 +440,18 @@ async function updateGuideState(payload) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload)
   });
-  if (!response.ok) throw new Error("Could not save guide state.");
+  if (!response.ok) throw new Error(await responseErrorMessage(response, "Could not save guide state."));
   return response.json();
+}
+
+async function responseErrorMessage(response, fallback) {
+  try {
+    var body = await response.json();
+    if (body && body.error) return body.error;
+  } catch (error) {
+    // Fall through to the generic fallback below.
+  }
+  return fallback;
 }
 
 function showPersistenceNotice(message) {

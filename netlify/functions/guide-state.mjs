@@ -48,21 +48,18 @@ function validateFeedback(activityId, text) {
 
 async function loadState(store) {
   const entry = await store.getWithMetadata(STATE_KEY, { type: "json" });
-  if (!entry) return { state: emptyState(), etag: null };
+  if (!entry) return { state: emptyState() };
   if (!entry.data || !entry.data.overrides || !Array.isArray(entry.data.feedback)) {
     throw new Error("Saved guide state is invalid.");
   }
-  return { state: entry.data, etag: entry.etag };
+  return { state: entry.data };
 }
 
 async function updateState(store, mutator) {
-  for (let attempt = 0; attempt < 2; attempt += 1) {
-    const { state, etag } = await loadState(store);
-    const updated = mutator(structuredClone(state));
-    const result = await store.setJSON(STATE_KEY, updated, etag ? { onlyIfMatch: etag } : { onlyIfNew: true });
-    if (result.modified) return updated;
-  }
-  throw new Error("Someone else updated the guide. Please try again.");
+  const { state } = await loadState(store);
+  const updated = mutator(structuredClone(state));
+  await store.setJSON(STATE_KEY, updated);
+  return updated;
 }
 
 export default async (request) => {
@@ -73,6 +70,7 @@ export default async (request) => {
       const { state } = await loadState(store);
       return json(state);
     } catch (error) {
+      console.error("Could not load guide state", error);
       return json({ error: "Could not load guide state." }, 500);
     }
   }
@@ -108,6 +106,7 @@ export default async (request) => {
     });
     return json(state);
   } catch (error) {
+    console.error("Could not save guide state", error);
     return json({ error: error.message || "Could not save guide state." }, 400);
   }
 };

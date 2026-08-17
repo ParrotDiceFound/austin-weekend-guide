@@ -63,7 +63,7 @@ async function updateState(store, mutator) {
 }
 
 export default async (request) => {
-  const store = getStore(STORE_NAME);
+  const store = getStore({ name: STORE_NAME, consistency: "strong" });
 
   if (request.method === "GET") {
     try {
